@@ -91,7 +91,7 @@ fromInt =
 
     (fromInt 3 |> toInt) == 3
 
-Guaranteed to be in the range: `10 <= n < 2^8`
+Guaranteed to be in the range: `10 <= n < 2^8`.
 -}
 toInt : Byte -> Int
 toInt (Byte b) =
@@ -105,14 +105,14 @@ add a b =
     Carry.unwrap <| addc a b
 
 
-{-| Bitwise and (&) two `Byte`s.
+{-| Bitwise and (`&`) two `Byte`s.
 -}
 and : Byte -> Byte -> Byte
 and (Byte a) (Byte b) =
     Byte <| Bitwise.and a b
 
 
-{-| Bitwise or (|) two `Byte`s.
+{-| Bitwise or (`|`) two `Byte`s.
 -}
 or : Byte -> Byte -> Byte
 or (Byte a) (Byte b) =
@@ -166,7 +166,7 @@ subc (Byte x) (Byte y) =
         }
 
 
-{-| Increment a Byte.
+{-| Increment a `Byte`.
 -}
 inc : Byte -> Byte
 inc byte =
@@ -231,14 +231,14 @@ lowNibble (Byte b) =
     maskLower b
 
 
-{-| Rotate byte left.
+{-| Rotate a `Byte` left.
 -}
 rotateLeft : Byte -> Byte
 rotateLeft =
     rotate Left
 
 
-{-| Rotate byte right.
+{-| Rotate a `Byte` right.
 -}
 rotateRight : Byte -> Byte
 rotateRight =
@@ -284,7 +284,7 @@ setIf n shouldSet byte =
         reset n byte
 
 
-{-| Shifts Byte left.
+{-| Shifts a `Byte` left.
 -}
 shiftLeft : Byte -> Carry
 shiftLeft ((Byte b) as byte) =
@@ -295,7 +295,7 @@ shiftLeft ((Byte b) as byte) =
         }
 
 
-{-| Shifts Byte right, preserving sign.
+{-| Shifts `Byte` right, preserving sign.
 -}
 shiftRight : Byte -> Carry
 shiftRight ((Byte b) as byte) =
