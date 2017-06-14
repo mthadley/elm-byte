@@ -91,7 +91,7 @@ fromInt =
 
     (fromInt 3 |> toInt) == 3
 
-Guaranteed to be in the range: `10 <= n < 2^8`.
+Guaranteed to be in the range: `0 <= n < 2^8`.
 -}
 toInt : Byte -> Int
 toInt (Byte b) =
