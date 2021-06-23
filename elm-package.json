@@ -1,7 +1,7 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "summary": "Working with Bytes in Elm",
-    "repository": "https://github.com/mthadley/elm-byte.git",
+    "repository": "https://github.com/starswan/elm-byte.git",
     "license": "MIT",
     "source-directories": [
         "src"
@@ -13,5 +13,5 @@
     "dependencies": {
         "elm-lang/core": "5.1.1 <= v < 6.0.0"
     },
-    "elm-version": "0.18.0 <= v < 0.19.0"
+    "elm-version": "0.18.0 <= v <= 0.19.1"
 }
